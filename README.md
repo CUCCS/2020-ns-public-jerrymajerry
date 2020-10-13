@@ -1,1 +1,2 @@
-# 2020-ns-public-jerrymajerry
+#  进度：第一章至第四章选做
+
