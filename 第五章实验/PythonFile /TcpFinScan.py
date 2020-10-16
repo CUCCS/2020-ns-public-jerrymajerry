@@ -10,7 +10,7 @@ dst_port = 80
 pkt=IP(dst=dst_ip)/TCP(sport=src_port,dport=dst_port,flags='F')
 res=sr1(pkt, timeout=5, verbose=False)
 if res==None:
-    print("open or filtered")
+    print("open or closed or filtered")
 elif res.haslayer(TCP):
     if res.getlayer(TCP).flags== 'AR':
         print("closed")
